@@ -1,0 +1,78 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<style>
+.full-screen{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.5);display:flex;justify-content:center;align-items:center;}
+p{color:red;margin:5px;cursor:pointer;}
+p:hover{background:yellow;}
+</style>
+</head>
+
+<body>
+<center>
+<div id="head">
+<table width="1000" boder="0" cellpadding="0" cellspacing="0">
+<tr>
+	<td><img src="banner.png" width="1000" height="100"></td>
+</tr>
+<tr>
+	<td align="center"><h1>MENU<br>菜單</h1></td>
+</tr>
+
+<div id="nav1"><br>
+<table width="1000" border="0" cellpadding="0" cellspacing="1" bgcolor="#999999"">
+<tr>
+	<td align="center" bgcolor="#FFFFFF">
+	<a href="">產品</a>　＞　<a href="">菜單</a>　＞　<a href="">拉麵</a>
+
+</table>
+</div>
+
+<p align="center">特價商品<br>- 冷泉雞翅 -</p>
+<div class="full-screen" align="center">
+<img src="CM.jpg" width=45% height=75%><p>
+<font color="white"><h1>點擊圖片繼續</h1></font>
+</div>
+
+<script>
+$("p").click(function(){
+	$(".full-screen").slideToggle();
+});
+$("img").click(function(){
+	$(".full-screen").slideToggle();
+});
+</script>
+
+
+<div id="cont"><br>
+<table border="1" width="1000" cellpadding="1" cellspacing="1" >
+<tr>
+	<td align="center" bgcolor="#FFFFFF" colspan="2"><font size="18"><b>- 拉麵 -</b></font></td>
+</tr>
+
+<tr>
+
+
+<td width="1001" bgcolor="#FFFFFF" valign="top">
+<table width="1000" cellpadding="1" cellspacing="1">
+
+<tr>
+<td align="center" ><img src="r2.jpg" width="300" height="433"></td>
+<td align="center"><img src="r1.jpg" width="400" height="286"></td>
+<tr>
+
+<tr>
+<td align="center"><a href="r2.jpg">中文菜單<br>點擊大圖</td>
+<td align="center"><a href="r1.jpg">英文菜單<br>點擊大圖</td>
+<tr>
+
+
+</table>
+</td>
+
+</tr>
+</table>
+</div>
+</body>
+</html>
